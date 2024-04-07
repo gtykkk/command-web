@@ -17,13 +17,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="max-h-screen">
+    <html className="h-screen mb-auto">
       <body>
         <Topbar />
-        <main className="">
+        <main className="mb-auto">
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
