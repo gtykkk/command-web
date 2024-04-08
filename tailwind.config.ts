@@ -24,6 +24,9 @@ const config: Config = {
       // => @media (max-width: 639px) { ... }
     },
     extend: {
+      fontFamily: {
+        inter: ["Inter"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

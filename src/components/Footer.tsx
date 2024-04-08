@@ -1,9 +1,9 @@
 const Footer = () => {
     return (
-        <div className="w-full bg-gray-800 p-6 sticky bottom-0">
-            <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className=" bg-gray-800 py-5 sm:text-sm text-xs">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 <span>
-                    모든 명령어는 여기서!
+                    모든 명령어 문제를 한 곳에서!
                 </span>
                 <span>
                     © 2021 All rights reserved

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Topbar from "../components/Header";
+import Topbar from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="h-screen mb-auto">
+    <html className="mt-auto">
       <body>
         <Topbar />
-        <main className="mb-auto">
+        <main className="min-h-screen flex flex-col relative">
           {children}
         </main>
         <Footer />

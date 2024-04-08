@@ -6,24 +6,24 @@ const Topbar = () => {
     <nav className="items-center sm:text-sm text-xs bg-gray-800 py-2">
       <div className="container mx-auto items-center">
         <div className="flex flex-row justify-between">
-          <div className="flex items-center px-3">
+          <div className="flex items-center">
             <Link href="./">
-              <img src="../favicon.ico" alt="" width={25} />
+              <img src="../favicon.ico" alt="logo" width={25} />
             </Link>
-            <p className="p-3 font-bold tracking-wider">
+            <p className="p-3 font-bold">
               모든 명령어 문제를 한 곳에서!
             </p>
           </div>
           <div className="flex items-center">
             <div className="px-5">
               <button className="flex items-center" type="button" value="Windows">
-                <img src="images/windows.svg" alt="" width={17} />
+                <img src="images/windows.svg" alt="Windows" width={17} height={17} />
                 <span className="px-1">Windows</span>
               </button>
             </div>
             <div className="px-5">
               <button className="flex items-center" type="button" value="Unix / Linux">
-                <img className="" src="images/unix.svg" alt="" width={17} />
+                <img src="images/unix.svg" alt="Unix / Linux" width={17} height={17} />
                 <span className="px-1">Unix / Linux</span>
               </button>
             </div>

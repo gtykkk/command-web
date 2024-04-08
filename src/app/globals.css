@@ -1,19 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   * {
-    @apply box-border list-none p-0 m-0 scroll-smooth;
+    @apply box-border m-0 p-0;
   }
 
   body {
-    @apply text-white min-h-screen bg-black;
+    @apply text-white bg-black font-inter font-bold h-full w-full scroll-smooth;
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  
 }
