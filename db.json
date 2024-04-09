@@ -1,0 +1,114 @@
+{
+  "windows": [
+    {
+      "question": "현재 디렉터리의 파일 목록을 표시함",
+      "answer": "DIR"
+    },
+    {
+      "question": "파일을 복사함",
+      "answer": "COPY"
+    },
+    {
+      "question": "파일을 삭제함",
+      "answer": "DEL"
+    },
+    {
+      "question": "파일의 내용을 표시함",
+      "answer": "TYPE"
+    },
+    {
+      "question": "파일의 이름을 변경함",
+      "answer": "REN"
+    },
+    {
+      "question": "디렉터리를 생성함",
+      "answer": "MD"
+    },
+    {
+      "question": "동일한 드라이브에서 디렉터리의 위치를 변경함",
+      "answer": "CD"
+    },
+    {
+      "question": "화면의 내용을 지움",
+      "answer": "CLS"
+    },
+    {
+      "question": "파일의 속성을 변경함",
+      "answer": "ATTRIB"
+    },
+    {
+      "question": "파일에서 문자열 찾음",
+      "answer": "FIND"
+    },
+    {
+      "question": "디스크의 오류를 점검함",
+      "answer": "CHKDSK"
+    },
+    {
+      "question": "디스크 표면을 트랙과 섹터로 나누어 초기화함",
+      "answer": "FORMAT"
+    },
+    {
+      "question": "파일을 이동함",
+      "answer": "MOVE"
+    }
+  ],
+  "unix": [
+    {
+      "question": "현재 디렉터리의 파일 목록을 표시함",
+      "answer": "ls"
+    },
+    {
+      "question": "파일을 복사함",
+      "answer": "cp"
+    },
+    {
+      "question": "디렉터리의 위치를 변경함",
+      "answer": "cd"
+    },
+    {
+      "question": "파일의 보호 모드를 설정하여 파일의 사용 허가를 지정함",
+      "answer": "chmod"
+    },
+    {
+      "question": "파일의 소유자와 그룹을 변경함",
+      "answer": "chown"
+    },
+    {
+      "question": "파일을 삭제함",
+      "answer": "rm"
+    },
+    {
+      "question": "파일의 내용을 표시함",
+      "answer": "cat"
+    },
+    {
+      "question": "파일을 찾음",
+      "answer": "find"
+    },
+    {
+      "question": "파일 시스템을 검사하고 보수함",
+      "answer": "fsck"
+    },
+    {
+      "question": "PID(프로세스 고유 번호)를 이용하여 프로세스를 종료함",
+      "answer": "kill"
+    },
+    {
+      "question": "새로운 프로세스를 생성함",
+      "answer": "fork"
+    },
+    {
+      "question": "프로세스의 이름을 이용하여 프로세스를 종료함",
+      "answer": "killall"
+    },
+    {
+      "question": "디렉터리 생성함",
+      "answer": "mkdir"
+    },
+    {
+      "question": "디렉터리 삭제함",
+      "answer": "rmdir"
+    }
+  ]
+}

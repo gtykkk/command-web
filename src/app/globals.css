@@ -15,5 +15,7 @@
 }
 
 @layer utilities {
-  
+  .btn {
+    @apply font-inter font-bold w-40 h-14 text-white bg-gray-800 border-2 border-white rounded-full hover:bg-gray-600 hover:text-white hover:border-gray-800;
+  }
 }
