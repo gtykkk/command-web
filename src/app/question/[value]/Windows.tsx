@@ -12,7 +12,7 @@ export default function Windows() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch(`http://localhost:9998/` + params.value, {
+                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}` + params.value, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'
@@ -27,7 +27,6 @@ export default function Windows() {
                 console.error(err);
             }
         };
-
         fetchData();
     }, [params.value]);
 
