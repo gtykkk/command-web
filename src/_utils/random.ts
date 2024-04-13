@@ -1,4 +1,4 @@
-import { QuestionTypes } from "../types/types";
+import { QuestionTypes } from "../_types/types";
 
 // 객체에서 랜덤 문제 가져오는 함수
 export function getRandomQuestion(items: QuestionTypes[]): QuestionTypes {

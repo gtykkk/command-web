@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { menu } from "./constants/Menu";
+import { menu } from "../_constants/Menu";
 import Link from "next/link";
 
 export default function Home() {

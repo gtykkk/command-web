@@ -1,4 +1,4 @@
-import { MenuTypes } from "../types/types";
+import { MenuTypes } from "../_types/types";
 
 // Header, page.tsx에서 사용될 메뉴 데이터
 export const menu: MenuTypes = {
