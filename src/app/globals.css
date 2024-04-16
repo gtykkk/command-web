@@ -10,12 +10,16 @@
   }
 
   body {
-    @apply text-white bg-black font-inter font-bold;
+    @apply text-white bg-black font-inter;
   }
 }
 
 @layer utilities {
   .btn {
-    @apply font-inter font-bold w-52 h-20 mt-10 text-white bg-gray-800 border-2 border-white rounded-3xl hover:bg-gray-600 hover:text-white hover:border-gray-800;
+    @apply font-inter w-36 h-16 md:w-48 md:h-20 mt-5 text-white bg-gray-800 border-2 border-white rounded-3xl hover:bg-gray-600 hover:text-white hover:border-gray-800;
+  }
+
+  .dropdownButton {
+    @apply font-inter text-lg bg-gray-800 rounded-md border-white
   }
 }

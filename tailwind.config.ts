@@ -22,6 +22,8 @@ const config: Config = {
 
       'sm' : {'max' : '639px'},
       // => @media (max-width: 639px) { ... }
+
+      'xs' : {'max' : '479px'},
     },
     extend: {
       fontFamily: {
