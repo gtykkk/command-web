@@ -21,7 +21,3 @@ export function shuffleAnswers(items: { question: string, answer: string }[], co
     const choices = [correctQuestion?.answer, ...randomIncorrectAnswers];
     return choices.sort(() => 0.5 - Math.random()); // 선택지를 랜덤으로 섞음(잘 안섞이는 것 같아서 바꿀 예정)
 }
-
-export function checkAnswer(answer: string) {
-    
-}

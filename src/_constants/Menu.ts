@@ -3,7 +3,7 @@ import { MenuTypes } from "../_types/types";
 // Header, page.tsx에서 사용될 메뉴 데이터
 export const menu: MenuTypes = {
     Windows: {
-        name: "Windows",
+        name: "Windows 용어",
         icon: "/images/svg/windows.svg",
         src: "/images/svg/windows.svg",
         alt: "Windows",
@@ -14,7 +14,7 @@ export const menu: MenuTypes = {
         priority: true,
     },
     Unix: {
-        name: "Unix / Linux",
+        name: "Unix / Linux 용어",
         icon: "/images/svg/unix.svg",
         src: "/images/svg/unix.svg",
         alt: "Unix / Linux",
@@ -24,4 +24,37 @@ export const menu: MenuTypes = {
         height: 17,
         priority: true,
     },
+    Network: {
+        name: "Network 관련 신기술",
+        icon: "/images/svg/network.svg",
+        src: "/images/svg/network.svg",
+        alt: "Network",
+        value: "network",
+        label: "Network",
+        width: 17,
+        height: 17,
+        priority: true,
+    },
+    Software: {
+        name: "Software 관련 신기술",
+        icon: "/images/svg/software.svg",
+        src: "/images/svg/software.svg",
+        alt: "Software",
+        value: "software",
+        label: "Software",
+        width: 17,
+        height: 17,
+        priority: true,
+    },
+    Hardware: {
+        name: "Hardware 관련 신기술",
+        icon: "/images/svg/hardware.svg",
+        src: "/images/svg/hardware.svg",
+        alt: "Hardware",
+        value: "hardware",
+        label: "Hardware",
+        width: 17,
+        height: 17,
+        priority: true,
+    }
 }

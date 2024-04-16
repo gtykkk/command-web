@@ -42,6 +42,7 @@ export default function Windows() {
         }
     }, [question]);
 
+    // 정답확인 함수
     const checkAnswer = (selectAnswer: string) => {
         if (selectAnswer === randomQuestion?.answer) {
             alert('정답입니다!');
@@ -60,19 +61,19 @@ export default function Windows() {
     }
 
     return (
-        <div className="flex flex-col justify-evenly min-h-svh">
+        <div className="flex flex-col justify-evenly min-h-svh w-[600px]">
             <div className="flex justify-center">
                 <span>
-                    정보처리 산업기사 실기 공부하다가 안외워져서 만들어본 명령어 사이트.
+                    정보처리 산업기사 실기 공부하다가 안외워져서 만들어본 문제 사이트.
                 </span>
             </div>
             <div className="px-20 py-32 bg-gray-800 rounded-xl">
-                <span>점수 : {cnt}</span>
+                {/* 점수기능 추후 생성 */}
                 <h1 className="flex justify-center text-xl mb-20">{randomQuestion?.question ? randomQuestion.question : 'Loading...'}</h1>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-2 gap-3 place-items-center">
                     {answers.map((answer, index) => (
                         <button
-                            className="flex flex-col btn items-center justify-center w-full xs:w-1/2 mt-10 rounded-"
+                            className="btn justify-center items-center"
                             key={index}
                             onClick={() => checkAnswer(answer)}
                         >

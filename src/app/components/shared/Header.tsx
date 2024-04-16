@@ -23,7 +23,8 @@ const Topbar = () => {
               모든 명령어 문제를 한 곳에서!
             </p>
           </div>
-          <div className="flex items-center" >
+          {/* dropdown 메뉴 만들어야함 */}
+          <div className="flex items-center">
             {Object.values(menu).map((items) => (
               <div className="px-5" key={items.name}>
                 <Link
@@ -37,7 +38,7 @@ const Topbar = () => {
                     height={25}
                     priority
                   />
-                  <span className="px-1">{items.name}</span>
+                  <span className="px-1">{items.label}</span>
                 </Link>
               </div>
             ))}
