@@ -13,7 +13,7 @@ export default function Windows() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}` + params.value, {
+                const res = await fetch(`/db.json`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json'
@@ -21,8 +21,15 @@ export default function Windows() {
                 });
 
                 if (res.status === 200) {
-                    const questions = await res.json();
+                    const data = await res.json();
+                    const questions = data[params.value.toString()] as QuestionTypes[];
+
                     setQuestion(questions);
+
+                    if (questions.length > 0) {
+                        const newRandomQuestion = getRandomQuestion(questions);
+                        setRandomQuestion(newRandomQuestion);
+                    }
                 }
             } catch (err) {
                 console.error(err);
