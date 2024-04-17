@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 export default function Question() {
   const [question, setQuestion] = useState<QuestionTypes[]>([]);
   const [randomQuestion, setRandomQuestion] = useState<QuestionTypes | null>(null);
+  const [selectAnswer, setSelectAnswer] = useState<string | null>(null);
   const [answers, setAnswers] = useState<string[]>([]);
   const [cnt, setCnt] = useState(0);
   const params = useParams();
@@ -54,8 +55,8 @@ export default function Question() {
   // 정답확인 함수
   const checkAnswer = (selectAnswer: string) => {
     if (selectAnswer === randomQuestion?.answer) {
-      alert('정답입니다!');
-      // 정답일 경우 새로운 문항을 가져옴(겹칠 수도 있음)
+      // alert('정답입니다!');
+      // 정답일 경우 새로운 문항을 가져옴(겹칠 수도 있음, 추후 수정 예정)s
       const newRandomQuestion = getRandomQuestion(question);
       setRandomQuestion(newRandomQuestion);
 
@@ -63,9 +64,11 @@ export default function Question() {
       const newAnswers = shuffleAnswers(otherItems, newRandomQuestion);
       setCnt(cnt + 1);
       setAnswers(newAnswers);
+      setSelectAnswer(null);
     } else {
+      setSelectAnswer(selectAnswer);
       // 오답일 경우 그 문항을 그대로 보여줌
-      alert('틀렸습니다!');
+      // alert('틀렸습니다!');
     }
   }
 
@@ -75,7 +78,7 @@ export default function Question() {
         <div className="flex justify-center text-xs min-h-svh md:w-[600px] md:text-lg px-8">
           <div className="flex flex-col justify-evenly text-center">
             <div className="flex justify-center">
-              <span>
+              <span className="text-xs md:text-base">
                 정보처리 산업기사 실기 공부하다가 안외워져서 만들어본 문제 맞추기.
               </span>
             </div>
@@ -85,7 +88,7 @@ export default function Question() {
               <div className="grid grid-cols-2 gap-3 place-items-center">
                 {answers.map((answer, index) => (
                   <button
-                    className="btn justify-center items-center"
+                    className={`btn justify-center items-center ${answer === selectAnswer ? answer === randomQuestion?.answer ? 'bg-green-500' : 'bg-red-500' : 'bg-gray-800'}`}
                     key={index}
                     onClick={() => checkAnswer(answer)}
                   >
