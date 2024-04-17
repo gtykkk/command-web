@@ -88,7 +88,7 @@ export default function Question() {
               <div className="grid grid-cols-2 gap-3 place-items-center">
                 {answers.map((answer, index) => (
                   <button
-                    className={`btn justify-center items-center ${answer === selectAnswer ? answer === randomQuestion?.answer ? 'bg-green-500' : 'bg-red-500' : 'bg-gray-800'}`}
+                    className={`btn justify-center items-center ${answer === selectAnswer ? answer === randomQuestion?.answer ? 'bg-green-500 hover:bg-green-500' : 'bg-red-500 hover:bg-red-500' : 'bg-gray-800'}`}
                     key={index}
                     onClick={() => checkAnswer(answer)}
                   >
